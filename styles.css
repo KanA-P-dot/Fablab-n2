@@ -1,14 +1,18 @@
-table {
-    border-collapse: collapse;
-    width: 100%;
+/* styles.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+#avis-table {
+    margin-top: 20px;
 }
 
-th {
-    background-color: #f2f2f2;
+#avis-table th {
+    font-weight: bold;
+}
+
+#avis-table td {
+    padding: 8px 0;
 }
