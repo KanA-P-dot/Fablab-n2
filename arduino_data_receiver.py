@@ -1,7 +1,7 @@
 import serial
 
 # Initialiser la communication série (adapter le port selon votre configuration)
-ser = serial.Serial('COM3', 9600)
+ser = serial.Serial('COM4', 9600)
 
 avis_list = []
 
