@@ -9,9 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 tbody.innerHTML = ''; // Réinitialiser le contenu du tbody
                 data.forEach(avis => {
                     const tr = document.createElement('tr');
-                    const td = document.createElement('td');
-                    td.textContent = avis;
-                    tr.appendChild(td);
+
+                    // Colonne Time stamp
+                    const timestampTd = document.createElement('td');
+                    timestampTd.textContent = avis.timestamp;
+                    tr.appendChild(timestampTd);
+
+                    // Colonne Avis Prof
+                    const profAvisTd = document.createElement('td');
+                    profAvisTd.textContent = avis.prof_avis;
+                    tr.appendChild(profAvisTd);
+
+                    // Colonne Avis Cours
+                    const coursAvisTd = document.createElement('td');
+                    coursAvisTd.textContent = avis.cours_avis;
+                    tr.appendChild(coursAvisTd);
+
                     tbody.appendChild(tr);
                 });
             })
